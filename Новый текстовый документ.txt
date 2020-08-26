@@ -1,0 +1,232 @@
+package homework;
+
+import java.util.Scanner;
+
+public class E1 {
+
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner (System.in);
+		
+		System.out.println("Inserisca il numero di pezzi acquisiti - ");
+		double pA = scanner.nextDouble();
+		System.out.println("Inserisca il prezzo unitario del prodotto - ");
+		double pU = scanner.nextDouble();
+		
+		double totale = pA * pU;
+		
+		if (pA > 10 && pU < 15) {
+			totale = totale * 0.20;
+		}
+		else {
+			totale = totale * 0.10;
+		}
+		
+		System.out.println("totale da pagare  " + totale);
+		
+	}
+
+}
+
+
+
+
+package homework;
+
+import java.util.Scanner;
+
+public class E2 {
+
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner (System.in);
+		System.out.println("Inserisca l'anno");
+		int anno = scanner.nextInt();
+		
+		if (anno % 4 == 0 && !(anno % 100 == 0)) {
+			System.out.println("anno bisestile");
+		}
+		else {
+			System.out.println("anno non bisestile");
+		}
+		
+
+	}
+
+}
+
+
+package homework;
+
+import java.util.Scanner;
+
+public class E3 {
+
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Inserisca il fatturato per anno 1");
+		double anno1 = scanner.nextDouble();
+		System.out.println("Inserisca il fatturato per anno 2");
+		double anno2 = scanner.nextDouble();
+		System.out.println("Inserisca il fatturato per anno 3");
+		double anno3 = scanner.nextDouble();
+		System.out.println("Inserisca il fatturato per anno 4");
+		double anno4 = scanner.nextDouble();
+		
+		double media1 = (anno1 + anno2) / 2;
+		double media2 = (anno3 + anno4) / 2;
+		
+		double trend = (((media1 + media2) / 2) * 100) / 100;
+		
+		if (trend > -1 && trend < 1) {
+			System.out.println("Trend nullo");
+		}
+		
+		else if (trend > 0) {
+			System.out.println("Trend positivo");
+		}
+		
+		else {
+			System.out.println("Trend negativo");
+		}
+		
+	}
+
+}
+
+
+package homework;
+
+import java.util.Scanner;
+
+public class Pag76E1 {
+
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Inserisca il numero 1");
+		int num1 = scanner.nextInt();
+		System.out.println("Inserisca il numero 2");
+		int num2 = scanner.nextInt();
+		int somma = num1 + num2;
+		
+		System.out.println("La somma dei due numeri uguale a " + somma);
+		
+		
+	
+		
+		
+
+	}
+
+}
+
+
+package homework;
+
+import java.util.Scanner;
+
+public class Pag76E2 {
+
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Inserisca il numero");
+		
+		for (int i = scanner.nextInt(); i > 0; i--) {
+			  System.out.println(i);
+			}
+		}
+	
+}
+
+package homework;
+
+
+
+public class Pag76E3 {
+
+	public static void main(String[] args) {
+		
+		
+		for(int i = 10;i < 100; i++ ) {
+			if(i % 5 == 0) {
+				System.out.println(i);
+			}
+		}
+
+	}
+
+}
+
+
+package homework;
+
+import java.util.Scanner;
+
+public class Pag76E4 {
+
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Inserisca il numero");
+		
+		for (int num = scanner.nextInt(); num > 0; num--) {
+			  System.out.println(num);
+			}
+		}
+	
+}
+
+
+package homework;
+
+import java.util.Scanner;
+
+public class Pag76E5 {
+
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		
+		for(;;) {
+			int i = scanner.nextInt();
+			i = i * 0;
+			System.out.println(i);
+			
+		}
+		
+	}
+	
+}
+
+
+package homework;
+
+import java.util.Scanner;
+
+public class Pag76E6 {
+
+	public static void main(String[] args) {
+		
+		Scanner sp = new Scanner (System.in);
+		
+		int a = sp.nextInt();
+		int b = sp.nextInt();
+		int somma = a + b;
+		
+		if (somma > a) {
+			System.out.println("supera il numero");
+		}else {
+			System.out.println("non supera il numero");
+		}
+
+	}
+
+}
+
